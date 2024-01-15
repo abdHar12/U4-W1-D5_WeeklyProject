@@ -6,4 +6,8 @@ public class ElementoMultimediale {
     public ElementoMultimediale(String _titolo){
         this.titolo=_titolo;
     }
+
+    public String getTitolo() {
+        return titolo;
+    }
 }
