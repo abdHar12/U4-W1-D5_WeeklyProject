@@ -5,7 +5,7 @@ import it.epicode.be.elementoMultimediale.Visivo;
 
 public abstract class NonRiproducibile extends ElementoMultimediale implements Visivo {
 
-    protected static int luminosita;
+    protected int luminosita;
     public NonRiproducibile(String _titolo) {
         super(_titolo);
     }

@@ -33,12 +33,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("La tua scelta: ");
         Integer scelta=scanner.nextInt();
-        while (scelta>=numScelte || !(scelta instanceof Integer)) {
+        while (scelta>=numScelte) {
             System.out.printf("Scelta non valida: ");
             System.out.println("Controlla la tua scelta?");
+            System.out.printf("La tua scelta: ");
             scelta=scanner.nextInt();
         }
-
         return scelta;
     }
 
@@ -67,6 +67,7 @@ public class Main {
         System.out.println("0: Alza il volume");
         System.out.println("1: Abbassa il volume");
         System.out.println("2: Torna alla pag. precedente: ");
+
         Integer scelta =Main.verificaScelta(3);
 
         while(scelta!=2){
@@ -223,7 +224,7 @@ public class Main {
         mostraMedia(listOfMedias);
         Integer riproduzione = Main.verificaScelta(6);
         if (riproduzione >= 0 && riproduzione < 5) sceltaRiproduzione(listOfMedias[riproduzione]);
-        else if (riproduzione == 5) return;
+        else System.exit(0);
     };
     public static void main() {
         creationOfArray();

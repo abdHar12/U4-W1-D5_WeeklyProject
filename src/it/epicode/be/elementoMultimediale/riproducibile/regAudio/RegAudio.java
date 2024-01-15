@@ -11,7 +11,7 @@ public class RegAudio extends Riproducibile {
     @Override
     public void play() {
         String volume="";
-        for (int i=0; i<Riproducibile.volume; i++){
+        for (int i=0; i<this.volume; i++){
             volume+="!";
         }
         String durata="";

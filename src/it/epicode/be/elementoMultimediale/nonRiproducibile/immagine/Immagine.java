@@ -11,10 +11,10 @@ public class Immagine extends NonRiproducibile{
     @Override
         public void show(){
         String lum="";
-        for (int i=0; i<NonRiproducibile.luminosita; i++){
+        for (int i=0; i<this.luminosita; i++){
             lum+="*";
         }
-        if(NonRiproducibile.luminosita>0)
+        if(this.luminosita>0)
             System.out.println(this.titolo + lum + "\n");
         else
             System.out.println(this.titolo + "\n");

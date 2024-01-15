@@ -17,7 +17,7 @@ public class Video extends Riproducibile implements Visivo {
             lum+="*";
         }
         String volume="";
-        for (int i=0; i<Riproducibile.volume; i++){
+        for (int i=0; i<this.volume; i++){
             volume+="!";
         }
         String durata="";
